@@ -1,0 +1,290 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-color:#FFFFFF;
+    --main-color: #264740;
+    --writing-color: #000000;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.container {
+    width: 1088px;
+    margin: auto;
+}
+
+.zoom-hover {
+    transform: scale(1.1);
+}
+
+.shadow {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.829);
+}
+
+.color-hover:hover {
+    background-color: #035847;
+}
+
+.main {
+    min-height: 100vh;
+    background-image: url(../images/back-land-3.png);
+    background-size: cover;
+    padding-top: 100px;
+}
+@media (max-width: 576px) {
+    .main {
+        min-height: 100vh;
+        background-image: url(../images/back-land-small.png);
+        background-size: cover;
+    }
+}
+
+.main a {
+    border-radius: 12px;
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    background-color: var(--header-color);
+    margin-left: -10px;
+}
+
+.main span {
+    color: var(--header-color);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.white-square {
+    width: auto;
+    height: auto;
+    background-color: var(--header-color);
+    border-radius: 24px;
+    margin-top: 30px;
+}
+
+/*start page 1&2&3*/
+
+.label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-group {
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+}
+
+.bg-color {
+    background-color: #EEF0F0;
+    border-radius: 12px;
+    border: 1px solid #97A7A3;
+    border-right: none;
+}
+
+.input-group span {
+    display: inline-block;
+    font-size: 13px;
+    color: var(--main-color);
+}
+
+input[placeholder="write your mobile number"] {
+    font-size: 12px;
+}
+
+.next-page {
+    background-color: var(--main-color);
+    border-radius: 12px;
+}
+
+.type-code {
+    display: flex;
+}
+
+.code {
+    border-color:transparent transparent #97A7A3 transparent;
+    border-width: 2px;
+    margin-top: -10px;
+}
+
+.continue {
+    font-size: 13px;
+    color: #97A7A3;
+}
+
+.type-number {
+    font-weight: bold;
+}
+.number-input {
+    border: 1px solid #97A7A3;
+    border-right: none;
+}
+
+.focus:focus {
+    border-color: #97A7A3 !important;
+    box-shadow: none !important;
+}
+
+.show-pass {
+    border: 1px solid #97A7A3;
+    border-radius: 12px;
+    font-size: 25px;
+    color: #264740;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.forgot-pass {
+    color: #97A7A3;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contact-us-2{
+    display: flex;
+}
+
+.contact-us-2 .contact {
+    width: 48px;
+    height: 48px;
+    background-color: var(--main-color);
+    border-radius: 12px;
+}
+.contact-us-2 .contact:hover {
+    transform: scale(1.1);
+}
+.contact-us-2 .contact:not(:last-child) {
+    margin-right: 30px;
+}
+
+.contact-us-2 img {
+    margin: 12px;
+}
+
+/*start page 4*/
+
+.your-info {
+   border-radius: 12px;
+   border-right: none;
+}
+
+.icon {
+    border-radius: 12px;
+}
+
+.no-border {
+    border-left: none;
+    border-radius: 12px;
+}
+
+.double {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar {
+    color: #264740;
+    font-size: 20px;
+}
+
+/*start page 5$6*/
+
+.captin {
+    background-color:#EEF0F0;
+    border-radius: 12px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.captin i {
+    font-size: 35px;
+}
+
+.Captain-Documents h5 {
+    font-size: 14px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.Captain-Documents p {
+    font-size: 12px;
+    color: #97A7A3;
+}
+
+.captin-2 {
+    background-color:#97A7A3;
+    border-radius: 12px;
+    width: 80px;
+    height: 80px;
+}
+
+.close {
+    font-size: 10px;
+    width: 20px;
+    height: 25px;
+    background-color:#EEF0F0;
+    border-radius: 50%;
+    margin-left: 180px;
+
+}
+
+.close-button {
+    margin-left: -7px;
+    margin-top: 5px;
+}
+
+/*start page 7 */
+
+.Vehicle {
+    border-radius: 12px;
+    
+}
+
+.Vehicle-form {
+    font-size: 14px;
+    color: #97A7A3;
+}
+@media (min-width:992px){
+    .Vehicle-form {
+    padding-right: 200px;
+}
+}
+
+.next {
+    background-color: var(--main-color);
+    color: var(--header-color);
+    border-radius: 12px;
+    border: none;
+    padding: 15px 50px;
+    margin-left: 200px;
+}
+@media (max-width:768px) {
+    .Vehicle-next {
+        margin-left: 70px;
+    }
+}
+
+/*start index form for theming file */
+.text-area {
+    height: 108px;
+    border-radius: 12px;
+}
+
+.raduis {
+    border-radius: 12px;  
+}
+
+.form-button {
+    margin: 23px 120px 1px;
+    padding: 15px 70px;
+    background-color: var(--main-color);
+    color: var(--header-color);
+    border-radius: 16px;
+}
